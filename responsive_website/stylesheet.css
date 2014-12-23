@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* GENERICS */
+body {
+	font-family:Verdana, Geneva, sans-serif;
+}
+a {
+	text-decoration:none;
+}
+
+/* WIDTH SETTING */
+
+.nav-hold,
+.image-grid,
+.container {
+	width:95%;
+	max-width:1000px;
+	margin:0 auto;
+}
+
+/* CONTAINER & FOOTER */
+
+.container {
+	padding:50px 10px 10px 10px;
+}
+.container h1,
+.container h2 {
+	font-size:2em;
+	margin-bottom:20px;
+	font-weight:600;
+}
+.container p {
+	line-height:1.35em;
+	columns:2;
+	-webkit-columns:2;
+	-moz-columns:2;
+	-o-columns:2;
+	-ms-columns:2;
+}
+.footer {
+	height:200px;
+	display:block;
+}
+
+/* NAVIGATION */
+
+.nav-bar {
+	width:100%;
+	background:#222;
+}
+.nav-hold {
+	overflow:hidden;
+}
+.nav-logo {
+	float:left;
+	display:block;
+	padding:20px 10px;
+	color:#f9f9f9;
+	font-weight:600;
+}
+.nav-list {
+	float:right;
+}
+.nav-list li {
+	float:left;
+}
+.nav-list li a {
+	display:block;
+	padding:20px 10px;
+	color:#f9f9f9;
+}
+.nav-menu {
+	display:none;
+}
+/* IMAGE GRID */
+
+.image-grid {
+	overflow:hidden;
+	padding:5px;
+}
+.image-grid-square {
+	float:left;
+	width:20%;
+	overflow:hidden;
+	padding:5px;
+}
+.image-grid-square img {
+	width:100%;
+	float:left;
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+	overflow:hidden;
+	margin-bottom:50px;
+}
+.form-section {
+	float:left;
+	width:25%;
+	padding:5px;
+}
+.form-section.message,
+.form-section.submit-holder {
+	float:left;
+	width:100%;
+}
+.form-section label {
+	display:block;
+	margin-bottom:2px;
+}
+.form-section input,
+.form-section textarea {
+	width:100%;
+	padding:5px 10px;
+	font-size:1.1em;
+	line-height:1.3em;
+}
+.form-section textarea.textarea-message {
+	resize:none;
+	height:150px;
+	padding:10px;
+}
+.form-section input.submit-button {
+	max-width:400px;
+	margin:0 auto;
+	float:none;
+	display:block;
+	border:none;
+	outline:none;
+	background:#111;
+	color:#f9f9f9;
+	padding:15px 10px;
+}
