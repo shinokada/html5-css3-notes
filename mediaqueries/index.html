@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Media Queries Inside Out</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <nav class="small-menu"><span class="nav-activate">+Menu</span>
+    </nav>
+    <header>
+        <div class="container">
+            <h1>Media Queries Inside Out</h1>
+            <h3>Media queries allow you to create <span>styles that adapt</span> to various
+            conditions by <span>limiting the scope</span> of your CSS rules.</h3>
+        </div>
+    </header>
+
+    <nav class="main-menu clearfix">
+        <ul class="container">
+            <li><a class="active" href="#">Home</a>
+            </li>
+            <li><a href="#">About Us</a>
+            </li>
+            <li><a href="#">Services</a>
+            </li>
+            <li><a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+
+        <div class="main-content">
+            <dl>
+                <dt>1</dt>
+                <dd>
+                    <h4>Cupidatat varias legam illum lorem</h4>
+                    <p>
+                        Excepteur multos noster admodum quorum in ne anim tamen esse proident. Non hic fugiat mentitum de amet possumus ubi instituendarum. Magna aut o quae quamquam, quorum excepteur non laboris. Quid ea nescius ne quorum, proident distinguantur aut iudicem.
+                    </p>
+                </dd>
+
+                <dt>2</dt>
+                <dd>
+                    <h4>Arbitrantur doctrina praetermissum nostrud despicationes sint</h4>
+                    <p>
+                        Laborum culpa iudicem litteris in occaecat hic labore. Laboris coniunctione a probant, appellat quem aute non culpa. Incididunt veniam elit si amet a non nulla nulla est vidisse. Duis o commodo o quem in tamen sempiternum laboris tamen mentitum.
+                    </p>
+                </dd>
+
+                <dt>3</dt>
+                <dd>
+                    <h4>Cupidatat varias legam illum lorem</h4>
+                    <p>
+                        Excepteur multos noster admodum quorum in ne anim tamen esse proident. Non hic fugiat mentitum de amet possumus ubi instituendarum. Magna aut o quae quamquam, quorum excepteur non laboris. Quid ea nescius ne quorum, proident distinguantur aut iudicem.
+                    </p>
+                </dd>
+
+                <dt>4</dt>
+                <dd>
+                    <h4>Arbitrantur doctrina praetermissum nostrud despicationes sint</h4>
+                    <p>
+                        Laborum culpa iudicem litteris in occaecat hic labore. Laboris coniunctione a probant, appellat quem aute non culpa. Incididunt veniam elit si amet a non nulla nulla est vidisse. Duis o commodo o quem in tamen sempiternum laboris tamen mentitum.
+                    </p>
+                </dd>
+            </dl>
+        </div>
+        <div class="sidebar">
+            <div class="advertisement">
+                <img src="http://placehold.it/300x200/E8117F/FFFFFF&text=Advertisement">
+            </div>
+
+            <div class="blog-posts">
+                <h3>From the Blog</h3>
+                <ul>
+                    <li>
+                        <h4>Elit Arbitrantur Arbitror</h4>
+                        <span class="date">posted on 08/03/14</span>
+                    </li>
+                    <li>
+                        <h4>Graviterque Mandaremus Imitarentur Illum Exquisitaque</h4>
+                        <span class="date">posted on 08/01/14</span>
+                    </li>
+                    <li>
+                        <h4>Mandaremus Imitarentur Illum</h4>
+                        <span class="date">posted on 07/29/14</span>
+                    </li>
+                    <li>
+                        <h4>Philosophari Quae Tempor Vidisse</h4>
+                        <span class="date">posted on 07/28/14</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+
+    <script>
+        $('.nav-activate').click(function(e) {
+            $('body').toggleClass('active');
+        });
+    </script>
+    
+</body>
+
+</html>
