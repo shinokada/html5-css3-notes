@@ -1,0 +1,32 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Main styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+.l-list-unstyled {
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+}
+
+.l-image-well {
+	height: 4.5rem;
+	width: 4.5rem;
+	margin-right: 1.5rem;
+
+	text-align: center;
+
+	@include float-left;
+}
+
+.l-text-well {
+	margin-left: 6rem;
+}
+
+.l-callout {
+	padding: 3rem;
+
+	@include border-radius(5px);
+}

@@ -1,0 +1,32 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Base styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+p {
+	margin-bottom: $baseline;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+blockquote {
+	margin: 0;
+
+	font-style: italic;
+
+	cite {
+		font-size: .75rem;
+		font-style: normal;
+
+		&:before {
+			content: "- ";
+		}
+	}
+}

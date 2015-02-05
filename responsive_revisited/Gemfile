@@ -1,0 +1,2 @@
+gem 'guard-concat', github: "makevoid/guard-concat"
+

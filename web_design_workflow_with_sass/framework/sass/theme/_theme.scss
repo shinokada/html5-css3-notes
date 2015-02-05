@@ -1,0 +1,201 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Theme styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+/* Typography */
+body {
+	color: $color-text;
+	font: #{$base-font-size}/#{$baseline} $font-1;
+}
+
+a {
+	color: $color-link;
+
+	&:hover {
+		color: $color-link-hover;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1.3125rem;
+
+	color: $color-dark-text;
+	font-family: $font-2;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 3.375rem;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 2.25rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	color: $color-light-text;
+}
+
+h4 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+h5 {
+	font-family: $font-1;
+	font-size: .75rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-family: $font-1;
+	font-size: .444rem;
+}
+
+blockquote cite {
+	color: $color-light-text;
+}
+
+
+
+/* Layout related */
+.t-margin {
+	margin-bottom: $general-margin;
+}
+
+
+
+/* Header */
+.t-beveled {
+	border-bottom: 4px solid #F4F4F4;
+
+	@include box-shadow(0 2px 5px rgba(0, 0, 0, .4));
+}
+
+.logo a {
+	color: $color-text;
+	font-family: $font-1;
+}
+
+
+/* Main banner */
+.t-main-banner {
+	background-color: $color-banner;
+
+	@include box-shadow(0 -4px 0 0 rgba(0, 0, 0, .2) inset);
+
+	h1,
+	h3,
+	p {
+		color: #fff;
+
+		@include text-shadow(1px 1px 3px rgba(0, 0, 0, .3));
+	}
+
+	hr {
+		width: 75%;
+
+		background-color: rgba(255, 255, 255, .4);
+	}
+}
+
+
+
+
+/* Buttons */
+.btn {
+	background-color: $color-1;
+
+	color: $color-text;
+
+	border-color: darken($color-1, 20%);
+
+	@include box-shadow(0 -2px 0 0 darken($color-1, 20%) inset);
+
+	&:hover {
+		background-color: darken($color-1, 5%);
+	}
+}
+
+.btn-primary {
+	background-color: $color-link;
+
+	color: #fff;
+
+	border-color: darken($color-link, 20%);
+
+	@include box-shadow(0 -2px 0 0 darken($color-link, 20%) inset);
+
+	&:hover {
+		background-color: darken($color-link, 5%);
+	}
+}
+
+.btn-secondary {
+	background-color: $color-2;
+
+	color: #fff;
+
+	border-color: darken($color-2, 20%);
+
+	@include box-shadow(0 -2px 0 0 darken($color-2, 20%) inset);
+
+	&:hover {
+		background-color: darken($color-2, 5%);
+	}
+}
+
+
+
+/* Lists */
+.l-image-well {
+	background-color: $color-hr;
+
+	@include border-radius(3px);
+
+	img {
+		margin-top: .75rem;
+	}
+}
+
+.l-list-divided li {
+	border-left: 1px solid $color-hr;
+}
+
+
+
+
+/* Callout */
+.t-callout {
+	background-color: $color-callout;
+
+	h2 {
+		margin-top: 0;
+
+		color: #fff;
+	}
+
+	h3 {
+		margin: 0;
+	}
+}
+
+
+/* Footer */
+.social-icon {
+	background-color: $color-hr;
+
+	color: $color-light-text;
+
+	@include border-radius(3px);
+}
